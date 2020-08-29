@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>
+  	.navigation-bar{
+		padding: 30px;
+    }
+  
+  	.navigation-bar>*{
+    	display:inline;
+    }
+  	
+  	.menu-list{
+    	display:inline;
+        margin: 0;
+        padding: 0;
+		float: right;
+    }
+    
+    .menu-list li{
+    	display:inline;
+    }
+  </style>
+  
   <body>
-    <div>
-      <span>SHUVASHNA</span>
-      <span>Portfolio</span>
-      <span>About</span>
+    <div class="navigation-bar">
+      <div>SHUVASHNA</div>
+      <ul class="menu-list">
+      	<li><a href="#">Portfolio</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
     </div> <!-- top navigation bar + icon -->
     
     <div></div> <!-- personal image + tag line -->
