@@ -3,37 +3,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <style>
-  	.navigation-bar{
+  	.navigation-bar, .personal-detail{
 		padding: 30px;
-    }
+    	}
   
   	.navigation-bar>*{
-    	display:inline;
-    }
+    		display:inline;
+    	}
   	
   	.menu-list{
-    	display:inline;
-        margin: 0;
-        padding: 0;
+    		display:inline;
+	        margin: 0;
+        	padding: 0;
 		float: right;
-    }
+    	}
     
-    .menu-list li{
-    	display:inline;
-    }
+	.menu-list li{
+    		display:inline;
+    	}
+    
+    
+    	.personal-detail{
+    		margin-top: 20px;
+    	}
+    
+    	.personal-detail>*{
+    		display:inline;
+    	}
+    
+    	.personal-image{
+    		width: 300px;
+        	height: auto;
+        	float: right;
+        	box-shadow: 10px -10px grey;
+    	}
   </style>
   
   <body>
+  
+    <!-- top navigation bar + icon -->
     <div class="navigation-bar">
       <div>SHUVASHNA</div>
       <ul class="menu-list">
       	<li><a href="#">Portfolio</a></li>
         <li><a href="#">About</a></li>
       </ul>
-    </div> <!-- top navigation bar + icon -->
+    </div>
     
-    <div></div> <!-- personal image + tag line -->
     
-    <div></div> <!-- project list -->
+    <!-- personal image + tag line -->
+    <div class="personal-detail">
+    	<p>Hi! I am a UX designer based in Bay Area</p>
+        <img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" class="personal-image" />
+    </div> 
+    
+    
+    <!-- project list -->
+    <div></div> 
   </body>
 </html>
