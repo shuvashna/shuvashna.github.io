@@ -51,20 +51,10 @@ button, a.button{
         
     
 .personal-detail{
-    padding: 8.3% 13.8% 0px 13.8%; /* 120px 200px 0px 200px; */
-    display: flex;
+    padding: 8.3% 8.3% 0px 8.3%;
+    /*display: flex;*/
     align-items: center;
     justify-content: center;
-}
-
-.personal-detail>div{
-    flex-grow: 65;
-    flex-basis: 0;
-}
-
-.personal-detail>img{
-    flex-grow: 35;
-    flex-basis: 0;
 }
 
 .personal-detail h2{
@@ -72,8 +62,10 @@ button, a.button{
 }
 
 .personal-image{
-    width: 20%;
+    width: 70%;
     box-shadow: 25px -25px #FFECCA, 25px 25px #FFECCA;
+    padding: 0px;
+    margin-top: 30px;
 }
         
         
@@ -89,6 +81,11 @@ button, a.button{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+
+.each-project:hover{
+    opacity: 0.8;
 }
 
 .each-project>*{
