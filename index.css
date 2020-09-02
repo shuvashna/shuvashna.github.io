@@ -89,10 +89,27 @@ button, a.button{
     cursor: pointer;
     padding-left: 4%;
     padding-right: 4%;
+    transition: 0.3s
 }
 
 .each-project:hover{
-    opacity: 0.8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#teenboost.each-project{
+    background: #FFF6E2;
+}
+
+#teenboost.each-project:hover{
+    background: #FFE5AD;
+}
+
+#indiabazar.each-project{
+    background: #DAC3B1;
+}
+
+#indiabazar.each-project:hover{
+    background: #CBA990;
 }
 
 .each-project>*{
