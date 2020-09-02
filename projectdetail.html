@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css"/>
+
+    <style>
+        body>*:nth-child(n+3){
+            background: white;
+            width: 100%;
+            max-width: 100%;
+            margin: 0px;
+            padding:40px 20% 40px 20%;
+        }
+
+        body>*:nth-child(n+3) img{
+            width: 100%;
+        }
+
+        body *{
+            line-height: 25px;
+        }
+
+        h2{
+            font-size: 24px;
+            margin-bottom: 18px;
+        }
+
+        h4{
+            font-size: 18px;
+            margin-bottom: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- top navigation bar + icon -->
+<div class="navigation-bar">
+    <img class="logo" src="images/logo.png" />
+    <ul class="menu-list">
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</div>
+
+<div class="project-content-top">
+    <h1></h1>
+    <img />
+</div>
+
+<div class="project-content-overview row">
+    <div class="col-md-7">
+        <h2>Overview</h2>
+        <span id="overview-content"></span>
+    </div>
+    <div class="col-md-5">
+        <b>Duration</b><br/>
+        <span id="duration"></span><br/><br/>
+
+        <b>Role and Responsibilities</b><br/>
+        <span id="roles"></span><br/><br/>
+
+        <b>Team</b><br/>
+        <span id="team"></span><br/><br/>
+
+        <b>Tools</b><br/>
+        <span id="tools"></span><br/><br/>
+    </div>
+</div>
+
+<div class="problem-content row">
+    <div class="col-md">
+        <h2>Problem</h2>
+        <span id="problemStatement"></span>
+    </div>
+</div>
+
+<div class="solution-content row">
+    <div class="col-md">
+        <h2>Solution</h2>
+        <span id="solutionStatement"></span>
+        <img id="solutionImg" />
+    </div>
+</div>
+
+<div class="market-research-content row">
+    <div class="col-md">
+        <h2>Market Research</h2>
+        <span id="marketResearch"></span>
+        <br/>
+        <h4>Feature Inventory</h4>
+        <img id="featureInventoryImg" />
+        <br/>
+        <h4>Element Analysis</h4>
+        <img id="elementAnalysisImg" />
+    </div>
+</div>
+
+<div class="user-research-content row">
+    <div class="col-md">
+        <h2>User Research</h2>
+        <span id="userResearch"></span>
+    </div>
+</div>
+
+<div class="user-research-insights-content row">
+    <div class="col-md">
+        <h2>Synthesizing insights from user interviews</h2>
+        <span id="userResearchInsights"></span>
+        <br/>
+        <img id="userResearchInsightsImg" />
+    </div>
+</div>
+
+<div class="personal-content row">
+    <div class="col-md">
+        <h2>Personas</h2>
+        <span id="personasContent"></span>
+        <br/><br/><br/><br/>
+        <img id="personasImg1" />
+        <br/><br/><br/><br/>
+        <img id="personasImg2" />
+    </div>
+</div>
+
+<div class="ideation row">
+    <div class="col-md">
+        <h2>Ideation</h2>
+        <h4>Brainstroming product features</h4>
+        <span id="brainstormProductFeature"></span>
+        <br/>
+        <h4>Information Architecture</h4>
+        <span id="informationArchitecture"></span>
+        <br/><br/>
+        <img id="informationArchitectureImg" />
+        <br/><br/><br/>
+        <h4>User flow</h4>
+        <span id="userFlow"></span>
+        <br/><br/>
+        <img id="userFlowImg" />
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+<script src="projects.js"></script>
+</body>
+</html>
