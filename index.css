@@ -20,7 +20,22 @@ button, a.button{
 
 .logo{
     width: 28px;
+    transition: 0.3s;
 }
+
+.logo:hover{
+    transform: scale(1.5)
+}
+
+.center-text{
+    text-align: center;
+}
+
+hr{
+    width: 100%;
+    max-width: 100%;
+}
+
 
 
 .navigation-bar, .project-list{
@@ -41,6 +56,11 @@ button, a.button{
     
 .menu-list li{
     display:inline;
+    transition: 0.3s;
+}
+
+.menu-list li:hover{
+    font-size:1.2rem;
 }
 
 .menu-list li:first-child{
@@ -140,6 +160,7 @@ button, a.button{
     align-items: center;
     justify-content: center;
     padding: 4.8% 8.3% 2% 8.3%;
+    clear: both;
 }
 
 .about-me-container-background{

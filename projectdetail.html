@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="index.css"/>
 
     <style>
-        body>*:nth-child(n+3){
+        body>div:nth-child(n+3){
             background: white;
             width: 100%;
             max-width: 100%;
@@ -32,13 +32,41 @@
             font-size: 18px;
             margin-bottom: 18px;
         }
+
+        .prototypes{
+            align-items: center;
+            justify-content: center;
+        }
+
+        #midFidelityImg{
+            width: 70%;
+            margin-left: 15%;
+        }
+
+
+        .high-fidelity-container{
+            padding-left: 10% !important;
+            padding-right: 10% !important;
+        }
+
+        .high-fidelity{
+            background: #FAF9F7;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .high-fidelity-title{
+            font-size: 24px;
+        }
     </style>
 </head>
 <body>
 
 <!-- top navigation bar + icon -->
 <div class="navigation-bar">
-    <img class="logo" src="images/logo.png" />
+    <a href="index.html"><img class="logo" src="images/logo.png"/></a>
     <ul class="menu-list">
         <li><a href="index.html">Portfolio</a></li>
         <li><a href="about.html">About</a></li>
@@ -47,7 +75,7 @@
 
 <div class="project-content-top">
     <h1></h1>
-    <img />
+    <img/>
 </div>
 
 <div class="project-content-overview row">
@@ -81,7 +109,7 @@
     <div class="col-md">
         <h2>Solution</h2>
         <span id="solutionStatement"></span>
-        <img id="solutionImg" />
+        <img id="solutionImg"/>
     </div>
 </div>
 
@@ -91,10 +119,10 @@
         <span id="marketResearch"></span>
         <br/>
         <h4>Feature Inventory</h4>
-        <img id="featureInventoryImg" />
+        <img id="featureInventoryImg"/>
         <br/>
         <h4>Element Analysis</h4>
-        <img id="elementAnalysisImg" />
+        <img id="elementAnalysisImg"/>
     </div>
 </div>
 
@@ -110,7 +138,7 @@
         <h2>Synthesizing insights from user interviews</h2>
         <span id="userResearchInsights"></span>
         <br/>
-        <img id="userResearchInsightsImg" />
+        <img id="userResearchInsightsImg"/>
     </div>
 </div>
 
@@ -119,9 +147,9 @@
         <h2>Personas</h2>
         <span id="personasContent"></span>
         <br/><br/><br/><br/>
-        <img id="personasImg1" />
+        <img id="personasImg1"/>
         <br/><br/><br/><br/>
-        <img id="personasImg2" />
+        <img id="personasImg2"/>
     </div>
 </div>
 
@@ -134,14 +162,78 @@
         <h4>Information Architecture</h4>
         <span id="informationArchitecture"></span>
         <br/><br/>
-        <img id="informationArchitectureImg" />
+        <img id="informationArchitectureImg"/>
         <br/><br/><br/>
         <h4>User flow</h4>
         <span id="userFlow"></span>
         <br/><br/>
-        <img id="userFlowImg" />
+        <img id="userFlowImg"/>
     </div>
 </div>
+
+<div class="prototypes row">
+    <div class="col-md">
+        <h2>Prototypes and Test</h2>
+        <h4>Low Fidelity Wireframe</h4>
+    </div>
+    <div class="w-100"></div>
+    <div class="col-md">
+        <span id="lowFidelity1"></span>
+    </div>
+    <div class="col-md">
+        <img id="lowFidelity1Img"/>
+    </div>
+    <div class="w-100"></div>
+    <br/><br/><br/>
+    <div class="col-md">
+        <img id="lowFidelity2Img"/>
+    </div>
+    <div class="col-md">
+        <span id="lowFidelity2"></span>
+    </div>
+    <div class="w-100"></div>
+    <br/><br/><br/>
+    <div class="col-md">
+        <span id="lowFidelity3"></span>
+    </div>
+    <div class="col-md">
+        <img id="lowFidelity3Img"/>
+    </div>
+
+    <div class="w-100"></div>
+    <br/><br/><br/>
+
+    <div class="col-md">
+        <h4>Mid-Fidelity Wireframes and Usability test</h4>
+        <span id="midFidelity"></span>
+        <br/><br/><br/>
+        <img id="midFidelityImg"/>
+    </div>
+</div>
+
+<div class="high-fidelity-container">
+    <div class="high-fidelity row">
+        <div class="col-md center-text">
+            <h4 class="high-fidelity-title">Hi-Fidelity Interactive<br/>Wireframe</h4>
+        </div>
+        <div class="col-md">
+            <iframe id="figmaPrototype" style="border: 1px solid rgba(0, 0, 0, 0);" width="450" height="700" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<div class="next-step row">
+    <div class="col-md">
+        <h2>Next Step</h2>
+        <span id="nextStep"></span>
+    </div>
+    <div class="col-md d-none d-md-block d-lg-block">
+        <img src="images/nextstep.png" style="max-width: 300px;" />
+    </div>
+</div>
+
+<hr/>
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

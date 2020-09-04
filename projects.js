@@ -1,5 +1,6 @@
 var projectArray = [{
-    "color": "#FFF6E2",
+    "color": "#FFE5AD",
+    "hColor": "#EAA420",
     "name": "Teenboost",
     "titleImage": "images/teenboost/teenboost.png",
     "overview": "Ginger provides on-demand mental health support through smartphone- based technology.<br/><br/>Inspired by and named after the ginger root and the effects of it’s healing properties, Ginger\’s mission is to use a preventative approach to mental addressing issues before they evolve into greater challenges and providing support anywhere, at any time.<br/><br/>While Ginger has made considerable headway in the adult market, they see a chance to expand their services to youth ages 11-18. So, as a design team we were brought on board to create and execute that vision of expansion into the teen market.",
@@ -43,7 +44,23 @@ var projectArray = [{
     "informationArchitecture": "We used information architecture to organize the product features",
     "informationArchitectureImg": "images/teenboost/informationArchitectureImg.png",
     "userFlow": "With a happy path in mind a general flow of user was created where user’s journey begins as she opens the app to explore and self learn on various topic to getting connected with a coach",
-    "userFlowImg": "images/teenboost/userFlowImg.png"
+    "userFlowImg": "images/teenboost/userFlowImg.png",
+    "lowFidelity1": "As a team we began our wireframes with quick sketches on the basis  of data we collected from our research. Three of us came up with three different sketches. Which helped me to gain a general idea and view of my teammates. Then I tried to unify those sketches into one.",
+    "lowFidelity1Img": "images/teenboost/lowFidelity1.png",
+    "lowFidelity2": "One of the major challenges that I faced during this process was linking the features that we chose for the app. Like daily check in, insights for those check in,  quick read on different topics related to mental health and wellbeing without deviating from Ginger’s main business goal i.e mental health services and connection to high quality coaches and clinicians.",
+    "lowFidelity2Img": "images/teenboost/lowFidelity2.png",
+    "lowFidelity3": "This led us back again to research. With the  help of our research lead we were able to find out different categories and life issues that are important to a teen’s life. This finding became one of the major aspects in our onboarding process and way to personalise the feed for the user.",
+    "lowFidelity3Img": "images/teenboost/lowFidelity3.png",
+    "midFidelity": "Once our sketches were finalised I started to digitalise those wireframes in figma. My first step was creating a UI system which acted as a ground foundation for prototyping.<br/>"+
+                    "Moving forward, we performed usability test and some of the findings were:",
+    "midFidelityImg": "images/teenboost/midFidelity.png",
+    "nextStep": "- Develop, implement and test insights feature<br/>"+
+                "- Update  color theme<br/>"+
+                "- Develop onboarding pop up instructions<br/>"+
+                "- Introducing how connecting with coach works<br/>"+
+                "- Ways to change coach <br/>"+
+                "- Develop notification reminders",
+    "figmaPrototype": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FTm8PIUhI0z8JqsdM9DL0Ym%2FGinger-T%3Fnode-id%3D354%253A3302%26viewport%3D2335%252C363%252C0.2600831687450409%26scaling%3Dscale-down&chrome=DOCUMENTATION"
 },{
     "color":"#DAC3B1",
     "name": "New India Bazaar",
@@ -59,10 +76,13 @@ $(document).ready(function(){
     initResearch();
     initPersonas();
     initIdeation();
+    initPrototype();
+    initNextStep();
 });
 
 function initTopProjectContent(){
     $("body").css("background-color", project["color"]);
+    $("h2").css("color", project["hColor"]);
     $(".problem-content").css("background-color", project["color"]);
     $(".project-content-top>h1").text(project["name"]);
     $(".project-content-top>img").attr("src", project["titleImage"]);
@@ -103,4 +123,22 @@ function initIdeation(){
     $("#informationArchitectureImg").attr("src", project["informationArchitectureImg"]);
     $("#userFlow").html(project["userFlow"]);
     $("#userFlowImg").attr("src", project["userFlowImg"]);
+}
+
+function initPrototype(){
+    $("#lowFidelity1").html(project["lowFidelity1"]);
+    $("#lowFidelity1Img").attr("src", project["lowFidelity1Img"]);
+    $("#lowFidelity2").html(project["lowFidelity2"]);
+    $("#lowFidelity2Img").attr("src", project["lowFidelity2Img"]);
+    $("#lowFidelity3").html(project["lowFidelity3"]);
+    $("#lowFidelity3Img").attr("src", project["lowFidelity3Img"]);
+
+    $("#midFidelity").html(project["midFidelity"]);
+    $("#midFidelityImg").attr("src", project["midFidelityImg"]);
+
+    $("#figmaPrototype").attr("src", project["figmaPrototype"]);
+}
+
+function initNextStep(){
+    $("#nextStep").html(project["nextStep"]);
 }
