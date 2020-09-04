@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
     <title>Portfolio Detail</title>
-    <link rel="icon" href="images/logo.png" />
+    <link rel="icon" href="images/logo.png"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css"/>
@@ -17,12 +17,37 @@
             padding:40px 20% 40px 20%;
         }
 
+        @media (max-width: 992px) {
+            body>div:nth-child(n+3){
+                padding:40px 5% 40px 5%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            #figmaPrototype{
+                width: 300px;
+                height: 600px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            #figmaPrototype{
+                width: 200px;
+                height: 400px;
+            }
+        }
+
+
         body>*:nth-child(n+3) img{
             width: 100%;
         }
 
         body *{
             line-height: 25px;
+        }
+
+        h1{
+            font-family: Ivy Mode;
         }
 
         h2{
@@ -33,6 +58,11 @@
         h4{
             font-size: 18px;
             margin-bottom: 18px;
+        }
+
+        .personal-content img{
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
 
         .prototypes{
@@ -62,6 +92,8 @@
         .high-fidelity-title{
             font-size: 24px;
         }
+
+
     </style>
 </head>
 <body>
@@ -149,9 +181,7 @@
     <div class="col-md">
         <h2>Personas</h2>
         <span id="personasContent"></span>
-        <br/><br/><br/><br/>
         <img id="personasImg1"/>
-        <br/><br/><br/><br/>
         <img id="personasImg2"/>
     </div>
 </div>
@@ -220,7 +250,8 @@
             <h4 class="high-fidelity-title">Hi-Fidelity Interactive<br/>Wireframe</h4>
         </div>
         <div class="col-md">
-            <iframe id="figmaPrototype" style="border: 1px solid rgba(0, 0, 0, 0);" width="450" height="700" allowfullscreen></iframe>
+            <iframe id="figmaPrototype" style="border: 1px solid rgba(0, 0, 0, 0);" width="400" height="800"
+                    allowfullscreen></iframe>
         </div>
     </div>
 </div>
@@ -231,12 +262,16 @@
         <span id="nextStep"></span>
     </div>
     <div class="col-md d-none d-md-block d-lg-block">
-        <img src="images/nextstep.png" style="max-width: 300px;" />
+        <img src="images/nextstep.png" style="max-width: 300px;"/>
     </div>
 </div>
 
 <hr/>
 
+<div class="contact-buttons">
+    <a href="https://www.linkedin.com/in/shuvashna-pradhan-43868a124" target="_blank"><img src="images/linkedin.png" /></a>
+    <a href="mailto:shuvashna147@gmail.com" target="_blank"><img src="images/email.png" /></a>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

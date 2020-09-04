@@ -31,8 +31,8 @@ var projectArray = [{
                              "- They are comfortable sharing about their feelings, willing to talk with strangers if they are trustworthy<br/>" +
                              "- Some of the self help methods Humor, Journaling, writing, play with friends, exercise, sleep, listen to music<br/>",
     "userResearchInsightsImg": "images/teenboost/userResearchInsightsImg.png",
-    "personasContent": "After research we came up with two user personas based on their goals and tasks.",
-    "personasImg1": "images/teenboost/personasImg1.png",
+    "personasContent": "After research we came up with a user persona based on their goals and tasks.",
+    "personasImg1": "",
     "personasImg2": "images/teenboost/personasImg2.png",
     "brainstormProductFeature": "As we analysed the data gathered from our C&C analysis, and user research we came up with a list of features. With the help of card sorting methods we were able to group and prioritize them. The features listed below were chosen.<br/>"+
                                  "- Check- In<br/>"+
