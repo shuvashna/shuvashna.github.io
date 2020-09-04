@@ -12,12 +12,15 @@ p{
 }
 
 button, a.button{
-    border: 1px solid #C4C4C4;
-    border-radius: 10px;
-    padding: 14px 60px;
+    margin-left: 15px;
     background: none;
     text-decoration: none;
     color: black;
+    border-bottom: 1px solid black;
+}
+
+button:hover, a.button:hover{
+    border-bottom: 3px solid black;
 }
 
 .logo{
@@ -47,6 +50,11 @@ hr{
     width: auto !important;
     margin-left: 18px;
     margin-right: 18px;
+    transition: 0.3s;
+}
+
+.contact-buttons img:hover{
+    transform: scale(1.5)
 }
 
 
