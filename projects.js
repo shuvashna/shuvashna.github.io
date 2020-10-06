@@ -10,7 +10,12 @@ var projectArray = [{
     "tools": "Figma, Trello, Miro<br/>Platform: Mob app",
     "problem": "As Ginger reaches millions of people around the world in 30 countries through its partnerships with employers and health plans demographic group of age 11- 18 is yet to be explored. How can we create a environment where our teenaged users can an approach, a trustworthy way to navigate through personal, social, external obstacles and decision-making in their life without fear of being?",
     "solution": "Designing a new application that creates an interactive, visually pleasing and personalized experience, our users will be able to use preventative measures, self-help methods and professional clinical resources to resolve their problems.",
-    "solutionImg": "images/teenboost/solutionImg.png",
+    "solutionImg1": "images/teenboost/solutionImg1.gif",
+    "solutionImg1Text": "Multiple category selection during onboarding",
+    "solutionImg2": "images/teenboost/solutionImg2.gif",
+    "solutionImg2Text": "Daily check-in & recommendation",
+    "solutionImg3": "images/teenboost/solutionImg3.gif",
+    "solutionImg3Text": "Explore self help method & get started with coach",
     "marketResearch": "Market research was conducted by collecting and comparing data of similar apps available in the market. In which we studied different apps like Youper , Moodpath, smiling mind that provided similar service as Ginger.<br/><br/>Here we studied about their UI, user flow and different features that they providedSome of the features that we felt that could solidify our app were daily check ins, Journaling, Insights,quick read on different topics like mental health, mindfulness and various life issues our teen might be going through. One of the major features that we incorporated in our app was a mood gauge that ginger lacks, where users would update how they are feeling and get recommendations accordingly.",
     "featureInventoryImg": "images/teenboost/featureInventoryImg.png",
     "elementAnalysisImg": "images/teenboost/elementAnalysisImg.png",
@@ -99,7 +104,12 @@ function initProjectOverview(){
 function initProblemAndSolution(){
     $("#problemStatement").html(project["problem"]);
     $("#solutionStatement").html(project["solution"]);
-    $("#solutionImg").attr("src", project["solutionImg"]);
+    $("#solutionImg1").attr("src", project["solutionImg1"]);
+    $("#solutionImg1Text").text(project["solutionImg1Text"]);
+    $("#solutionImg2").attr("src", project["solutionImg2"]);
+    $("#solutionImg2Text").text(project["solutionImg2Text"]);
+    $("#solutionImg3").attr("src", project["solutionImg3"]);
+    $("#solutionImg3Text").text(project["solutionImg3Text"]);
 }
 
 function initResearch(){

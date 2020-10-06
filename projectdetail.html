@@ -101,6 +101,16 @@
             text-decoration: underline;
         }
 
+        #solutionImageContainer{
+            background: #F8F6F4;
+            padding: 30px;
+            margin: 1.8%;
+        }
+
+        #solutionImageContainer div{
+            text-align: center;
+            color: #E8927C;
+        }
     </style>
 </head>
 <body>
@@ -150,10 +160,25 @@
     <div class="col-md">
         <h2>Solution</h2>
         <span id="solutionStatement"></span>
-        <br/><br/>
-        <img id="solutionImg"/>
-        <br/><br/>
-        <a href="#interactiveWireframe">View Interactive Wireframe</a>
+    </div>
+    <div class="w-100"></div>
+    <div id="solutionImageContainer" class="row">
+        <div class="col">
+            <img id="solutionImg1"/>
+            <div id="solutionImg1Text"></div>
+        </div>
+        <div class="col">
+            <img id="solutionImg2"/>
+            <div id="solutionImg2Text"></div>
+        </div>
+        <div class="col">
+            <img id="solutionImg3"/>
+            <div id="solutionImg3Text"></div>
+        </div>
+    </div>
+    <div class="w-100"></div>
+    <div class="col-md">
+        <a href="#interactiveWireframe">View Interactive Prototype</a>
     </div>
 </div>
 
@@ -255,9 +280,11 @@
 
 <div class="high-fidelity-container" id="interactiveWireframe">
     <div class="high-fidelity row">
-        <div class="col-md center-text">
-            <h4 class="high-fidelity-title">Hi-Fidelity Interactive<br/>Wireframe</h4>
+        <div class="col-md">
+            <h4 class="high-fidelity-title">Interactive Prototype</h4>
         </div>
+        <div class="w-100"></div>
+        <br/><br/>
         <div class="col-md">
             <iframe id="figmaPrototype" style="border: 1px solid rgba(0, 0, 0, 0);" width="400" height="800"
                     allowfullscreen></iframe>
