@@ -2,6 +2,7 @@ var projectArray = [{
     "color": "#FFE5AD",
     "hColor": "#EAA420",
     "name": "Teenboost",
+    "subTitle":"A mobile app to provide on demand mental health support for teenagers",
     "titleImage": "images/teenboost/teenboost.png",
     "overview": "Ginger provides on-demand mental health support through smartphone- based technology.<br/><br/>Inspired by and named after the ginger root and the effects of it’s healing properties, Ginger\’s mission is to use a preventative approach to mental addressing issues before they evolve into greater challenges and providing support anywhere, at any time.<br/><br/>While Ginger has made considerable headway in the adult market, they see a chance to expand their services to youth ages 11-18. So, as a design team we were brought on board to create and execute that vision of expansion into the teen market.",
     "duration": "15 days",
@@ -37,7 +38,6 @@ var projectArray = [{
                              "- Some of the self help methods Humor, Journaling, writing, play with friends, exercise, sleep, listen to music<br/>",
     "userResearchInsightsImg": "images/teenboost/userResearchInsightsImg.png",
     "personasContent": "After research we came up with a user persona based on their goals and tasks.",
-    "personasImg1": "",
     "personasImg2": "images/teenboost/personasImg2.png",
     "brainstormProductFeature": "As we analysed the data gathered from our C&C analysis, and user research we came up with a list of features. With the help of card sorting methods we were able to group and prioritize them. The features listed below were chosen.<br/>"+
                                  "- Check- In<br/>"+
@@ -46,8 +46,7 @@ var projectArray = [{
                                  "- Isight<br/>"+
                                  "- Recommendations<br/>"+
                                  "- Journal<br/>",
-    "informationArchitecture": "We used information architecture to organize the product features",
-    "informationArchitectureImg": "images/teenboost/informationArchitectureImg.png",
+    "informationArchitecture": "<span>We used information architecture to organize the product features</span><br/><br/><img src='images/teenboost/informationArchitectureImg.png'/>",
     "userFlow": "With a happy path in mind a general flow of user was created where user’s journey begins as she opens the app to explore and self learn on various topic to getting connected with a coach",
     "userFlowImg": "images/teenboost/userFlowImg.png",
     "lowFidelity1": "As a team we began our wireframes with quick sketches on the basis  of data we collected from our research. Three of us came up with three different sketches. Which helped me to gain a general idea and view of my teammates. Then I tried to unify those sketches into one.",
@@ -65,16 +64,53 @@ var projectArray = [{
                 "- Introducing how connecting with coach works<br/>"+
                 "- Ways to change coach <br/>"+
                 "- Develop notification reminders",
-    "figmaPrototype": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FTm8PIUhI0z8JqsdM9DL0Ym%2FGinger-T%3Fnode-id%3D354%253A3302%26viewport%3D2335%252C363%252C0.2600831687450409%26scaling%3Dscale-down&chrome=DOCUMENTATION"
+    "figmaPrototype": "<iframe style='border: 1px solid rgba(0, 0, 0, 0);' width='400' height='800' src='https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FTm8PIUhI0z8JqsdM9DL0Ym%2FGinger-T%3Fnode-id%3D354%253A3302%26viewport%3D2335%252C363%252C0.2600831687450409%26scaling%3Dscale-down&chrome=DOCUMENTATION' allowfullscreen></iframe>"
 },{
     "color":"#DAC3B1",
+    "hColor": "#6A4325",
     "name": "New India Bazaar",
-    "titleImage": "images/teenboost.png"
+    "subTitle": "E-commerce website redesign of an Indian grocery store",
+    "titleImage": "images/newindiabazar/newindiabazar.png",
+    "overview": "New India Bazar is an Indian grocery store serving locals of Daly City for the past 25 years.<br/><br/>They are most well known for their wide range of spices, grocery items all the way from India, and their welcoming and friendly environment in their store.",
+    "duration": "15 days",
+    "roles": "UX/UI designer",
+    "tools": "Figma, Trello, Miro",
+    "problem": "To extend the reach of their service to a greater audience they have a responsive website. However, users are overwhelmed with lengthy texts, have difficulty navigating through the website, and frustrated with the lengthy checkout process. <a href='https://www.nibsf.com/' target='blank'>Current website</a> <br/><br/>So, How might we make New India Bazar’s user online shopping experience be easier, faster, and satisfying?",
+    "solution": "Redesigning the website that provides clear and intuitive user navigation with the efficient flow.",
+    "marketResearch": "Market research was conducted by collecting and comparing data of similar ecommerce websites.  We created a feature inventory list and I did deep element analysis of those websites by creating common categories in an efficient way.<br/><br/><u>Key findings:</u><br/>" +
+                       "- An effective navigation structure in a e-commerce website<br/>" +
+                       "- An efficient user flow<br/>" +
+                       "- Ways to reduce wasteful cognitive load<br/>" +
+                       "- Standard placements of UI elements<br/>",
+    "elementAnalysisImg": "images/newindiabazar/elementAnalysisImg.png",
+    "userResearch": "Me personally belonging to a ethnic group, I usally go to ethnic stores to buy my grocery items. However, I had never ordered my groceries online so, to better understand our users I interviewed five individuals. And some of my initial curiosities were<br/><br/>" +
+                     "- Who shopped in ethnic grocery stores?<br/>" +
+                     "- What was their expericence like while shopping in those stores?<br/>" +
+                     "- Do they shop their grocery online?<br/>" +
+                     "- What influenced them to shop in those stores?<br/>" +
+                     "- Do usually find what they are looking for?<br/>" +
+                     "- Do they share their unique finds?",
+    "userResearchInsights": "<u>Key findings</u><br/>" +
+                    "- Most of the shopper belogned to the enthnic group<br/>"+
+                    "- They shopped in ethnic store since they get wide range of variety of grocery goods<br/>" +
+                    "- Most shopper felt sense of belonging and reliving their childhood memories as they walk along the aisle of the store.<br/>" +
+                    "- Shopped in grocery store as often as they go to american grocery stores<br/>" +
+                    "- Take pride on sharing some good finds with friends",
+     "personasContent": "After research we came up with two user personas based on their goals and tasks.",
+     "personasImg2": "images/newindiabazar/personasImg2.png",
+     "informationArchitecture": "One of the biggest challenges in ecmmerce website is organisation of different categories in efficient way that does not create any confusion to user and users find it easy to find the items they are looking for.  So, card sorting exercise was performed which helped to create and organize information architecture website.<br/><br/><u>Open card sorting exercise</u><br/><img src='images/newindiabazar/cardsorting.png' /><br/><br/><br/><u>Site map</u><br/><img src='images/newindiabazar/sitemap.png' />",
+     "userFlow": "With updated site map and reduced cognitive load I created a new user flow where the steps is cut down to almost half from existing flow making the purchasing process more efficient and easy.",
+     "userFlowImg": "images/newindiabazar/userFlowImg.png",
+     "lowFidelity1": "Once I gained the visualisation of general layout of the website I started to sketch it out.",
+     "lowFidelity1Img": "images/newindiabazar/lowFidelity1.png",
+     "midFidelity": "Next step was to create digital wireframes",
+     "midFidelityImg": "images/newindiabazar/midFidelity.png",
+     "figmaPrototype": "<iframe style='border: 1px solid rgba(0, 0, 0, 0.1);' width='800' height='450' src='https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FuSk4vxICjGJNnEhwcia0LY%2FProject2_WIreframing-HI-fi%3Fnode-id%3D90%253A1%26viewport%3D625%252C391%252C0.015625%26scaling%3Dmin-zoom&chrome=DOCUMENTATION' allowfullscreen></iframe>"
 }];
 
 var project;
 $(document).ready(function(){
-    project = projectArray[0];
+    project = projectArray[getCurrentProjectIndex()];
     initTopProjectContent();
     initProjectOverview();
     initProblemAndSolution();
@@ -85,11 +121,18 @@ $(document).ready(function(){
     initNextStep();
 });
 
+function getCurrentProjectIndex(){
+    var url = new URL(window.location.href);
+    var projectIndex = Number(url.searchParams.get("project"));
+    return isNaN(projectIndex) ? 0 : projectIndex;
+}
+
 function initTopProjectContent(){
     $("body").css("background-color", project["color"]);
-    $("h2").css("color", project["hColor"]);
+    $("h2,h4,b,h1.internalHeader").css("color", project["hColor"]);
     $(".problem-content").css("background-color", project["color"]);
     $(".project-content-top>h1").text(project["name"]);
+    $(".project-content-top>p").text(project["subTitle"]);
     $(".project-content-top>img").attr("src", project["titleImage"]);
 }
 
@@ -97,7 +140,11 @@ function initProjectOverview(){
     $("#overview-content").html(project["overview"]);
     $("#duration").html(project["duration"]);
     $("#roles").html(project["roles"]);
-    $("#team").html(project["team"]);
+    if(project["team"]){
+        $("#team").html(project["team"]);
+    }else{
+        $(".teamUI").hide();
+    }
     $("#tools").html(project["tools"]);
 }
 
@@ -114,7 +161,13 @@ function initProblemAndSolution(){
 
 function initResearch(){
     $("#marketResearch").html(project["marketResearch"]);
-    $("#featureInventoryImg").attr("src", project["featureInventoryImg"]);
+
+    if(project["featureInventoryImg"]){
+        $("#featureInventoryImg").attr("src", project["featureInventoryImg"]);
+    }else{
+        $(".featureInventoryUI").hide();
+    }
+
     $("#elementAnalysisImg").attr("src", project["elementAnalysisImg"]);
     $("#userResearch").html(project["userResearch"]);
     $("#userResearchInsights").html(project["userResearchInsights"]);
@@ -128,9 +181,12 @@ function initPersonas(){
 }
 
 function initIdeation(){
-    $("#brainstormProductFeature").html(project["brainstormProductFeature"]);
+    if(project["brainstormProductFeature"]){
+        $("#brainstormProductFeature").html(project["brainstormProductFeature"]);
+    }else{
+        $(".brainstormProductFeatureUI").hide();
+    }
     $("#informationArchitecture").html(project["informationArchitecture"]);
-    $("#informationArchitectureImg").attr("src", project["informationArchitectureImg"]);
     $("#userFlow").html(project["userFlow"]);
     $("#userFlowImg").attr("src", project["userFlowImg"]);
 }
@@ -138,17 +194,31 @@ function initIdeation(){
 function initPrototype(){
     $("#lowFidelity1").html(project["lowFidelity1"]);
     $("#lowFidelity1Img").attr("src", project["lowFidelity1Img"]);
-    $("#lowFidelity2").html(project["lowFidelity2"]);
-    $("#lowFidelity2Img").attr("src", project["lowFidelity2Img"]);
-    $("#lowFidelity3").html(project["lowFidelity3"]);
-    $("#lowFidelity3Img").attr("src", project["lowFidelity3Img"]);
+
+    if(project["lowFidelity2"]){
+        $("#lowFidelity2").html(project["lowFidelity2"]);
+        $("#lowFidelity2Img").attr("src", project["lowFidelity2Img"]);
+    }else{
+        $(".lowFidelity2UI").hide();
+    }
+
+    if(project["lowFidelity3"]){
+        $("#lowFidelity3").html(project["lowFidelity3"]);
+        $("#lowFidelity3Img").attr("src", project["lowFidelity3Img"]);
+    }else{
+        $(".lowFidelity3UI").hide();
+    }
 
     $("#midFidelity").html(project["midFidelity"]);
     $("#midFidelityImg").attr("src", project["midFidelityImg"]);
 
-    $("#figmaPrototype").attr("src", project["figmaPrototype"]);
+    $("#figmaPrototype").html(project["figmaPrototype"]);
 }
 
 function initNextStep(){
-    $("#nextStep").html(project["nextStep"]);
+    if(project["nextStep"]){
+        $("#nextStep").html(project["nextStep"]);
+    }else{
+        $(".nextStepUI").hide();
+    }
 }

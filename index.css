@@ -36,6 +36,13 @@ button:hover, a.button:hover{
     text-align: center;
 }
 
+h1.internalHeader{
+    font-family: Montserrat;
+    font-size: 30px;
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+
 hr{
     width: 100%;
     max-width: 100%;

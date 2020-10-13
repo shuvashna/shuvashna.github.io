@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="index.css"/>
 
     <style>
+        .project-content-top p{
+            font-size: 16px;
+            margin-top:20px;
+        }
+
         body>div:nth-child(n+3){
             background: white;
             width: 100%;
@@ -25,14 +30,14 @@
         }
 
         @media (max-width: 600px) {
-            #figmaPrototype{
+            #figmaPrototype>iframe{
                 width: 300px;
                 height: 600px;
             }
         }
 
         @media (max-width: 500px) {
-            #figmaPrototype{
+            #figmaPrototype>iframe{
                 width: 200px;
                 height: 400px;
             }
@@ -63,6 +68,11 @@
             font-weight: bold;
         }
 
+        .row a{
+            text-decoration: underline;
+            color: inherit;
+        }
+
         .personal-content img{
             margin-top: 20px;
             margin-bottom: 20px;
@@ -71,11 +81,6 @@
         .prototypes{
             align-items: center;
             justify-content: center;
-        }
-
-        #midFidelityImg{
-            width: 70%;
-            margin-left: 15%;
         }
 
 
@@ -111,6 +116,12 @@
             text-align: center;
             color: #E8927C;
         }
+
+        .processUI{
+            padding-bottom: 0px !important;
+            margin-bottom: 0px !important;
+            overflow: auto;
+        }
     </style>
 </head>
 <body>
@@ -126,23 +137,26 @@
 
 <div class="project-content-top">
     <h1></h1>
+    <p></p>
     <img/>
 </div>
 
 <div class="project-content-overview row">
     <div class="col-md-7">
-        <h2>Overview</h2>
+        <h1 class="internalHeader">Overview</h1>
         <span id="overview-content"></span>
     </div>
     <div class="col-md-5">
-        <b>Duration</b><br/>
+        <b>Design Sprint</b><br/>
         <span id="duration"></span><br/><br/>
 
         <b>Role and Responsibilities</b><br/>
         <span id="roles"></span><br/><br/>
 
-        <b>Team</b><br/>
-        <span id="team"></span><br/><br/>
+        <div class="teamUI">
+            <b>Team</b><br/>
+            <span id="team"></span><br/><br/>
+        </div>
 
         <b>Tools</b><br/>
         <span id="tools"></span><br/><br/>
@@ -151,14 +165,14 @@
 
 <div class="problem-content row">
     <div class="col-md">
-        <h2>Problem</h2>
+        <h1 class="internalHeader">Problem</h1>
         <span id="problemStatement"></span>
     </div>
 </div>
 
 <div class="solution-content row">
     <div class="col-md">
-        <h2>Solution</h2>
+        <h1 class="internalHeader">Solution</h1>
         <span id="solutionStatement"></span>
     </div>
     <div class="w-100"></div>
@@ -182,14 +196,22 @@
     </div>
 </div>
 
+<div class="row processUI">
+    <div class="col-md">
+        <h1 class="internalHeader">Process</h1>
+    </div>
+</div>
+
 <div class="market-research-content row">
     <div class="col-md">
         <h2>Market Research</h2>
         <span id="marketResearch"></span>
         <br/>
-        <h4>Feature Inventory</h4>
-        <img id="featureInventoryImg"/>
-        <br/>
+        <div class="featureInventoryUI">
+            <h4>Feature Inventory</h4>
+            <img id="featureInventoryImg"/>
+            <br/>
+        </div>
         <h4>Element Analysis</h4>
         <img id="elementAnalysisImg"/>
     </div>
@@ -200,11 +222,10 @@
         <h2>User Research</h2>
         <span id="userResearch"></span>
     </div>
-</div>
-
-<div class="user-research-insights-content row">
+    <div class="w-100"></div>
+    <br/>
     <div class="col-md">
-        <h2>Synthesizing insights from user interviews</h2>
+        <h4>Synthesizing insights from user interviews</h4>
         <span id="userResearchInsights"></span>
         <br/>
         <img id="userResearchInsightsImg"/>
@@ -215,7 +236,6 @@
     <div class="col-md">
         <h2>Personas</h2>
         <span id="personasContent"></span>
-        <img id="personasImg1"/>
         <img id="personasImg2"/>
     </div>
 </div>
@@ -223,13 +243,15 @@
 <div class="ideation row">
     <div class="col-md">
         <h2>Ideation</h2>
-        <h4>Brainstroming product features</h4>
-        <span id="brainstormProductFeature"></span>
-        <br/>
+
+        <div class="brainstormProductFeatureUI">
+            <h4>Brainstroming product features</h4>
+            <span id="brainstormProductFeature"></span>
+            <br/>
+        </div>
+
         <h4>Information Architecture</h4>
-        <span id="informationArchitecture"></span>
-        <br/><br/>
-        <img id="informationArchitectureImg"/>
+        <div id="informationArchitecture"></div>
         <br/><br/><br/>
         <h4>User flow</h4>
         <span id="userFlow"></span>
@@ -250,20 +272,18 @@
     <div class="col-md">
         <img id="lowFidelity1Img"/>
     </div>
-    <div class="w-100"></div>
-    <br/><br/><br/>
-    <div class="col-md">
+    <div class="w-100 lowFidelity2UI"><br/><br/><br/></div>
+    <div class="col-md lowFidelity2UI">
         <img id="lowFidelity2Img"/>
     </div>
-    <div class="col-md">
+    <div class="col-md lowFidelity2UI">
         <span id="lowFidelity2"></span>
     </div>
-    <div class="w-100"></div>
-    <br/><br/><br/>
-    <div class="col-md">
+    <div class="w-100 lowFidelity3UI"><br/><br/><br/></div>
+    <div class="col-md lowFidelity3UI">
         <span id="lowFidelity3"></span>
     </div>
-    <div class="col-md">
+    <div class="col-md lowFidelity3UI">
         <img id="lowFidelity3Img"/>
     </div>
 
@@ -285,14 +305,12 @@
         </div>
         <div class="w-100"></div>
         <br/><br/>
-        <div class="col-md">
-            <iframe id="figmaPrototype" style="border: 1px solid rgba(0, 0, 0, 0);" width="400" height="800"
-                    allowfullscreen></iframe>
+        <div class="col-md" id="figmaPrototype">
         </div>
     </div>
 </div>
 
-<div class="next-step row">
+<div class="next-step row nextStepUI">
     <div class="col-md">
         <h2>Next Step</h2>
         <span id="nextStep"></span>
