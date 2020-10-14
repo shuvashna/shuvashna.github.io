@@ -77,6 +77,9 @@ var projectArray = [{
     "tools": "Figma, Trello, Miro",
     "problem": "To extend the reach of their service to a greater audience they have a responsive website. However, users are overwhelmed with lengthy texts, have difficulty navigating through the website, and frustrated with the lengthy checkout process. <a href='https://www.nibsf.com/' target='blank'>Current website</a> <br/><br/>So, How might we make New India Bazar’s user online shopping experience be easier, faster, and satisfying?",
     "solution": "Redesigning the website that provides clear and intuitive user navigation with the efficient flow.",
+    "currentState": "Before redesigning the website it was very important for me to study its current state. Usability test with five users was conducted which helped me to dissect and pinout different areas of improvement in the site.",
+    "keyFindings": [{"image": "images/newindiabazar/keyfinding1.png", "title": "Cognitive load", "description": "Long text on landing, before check out, long pdf files for FAQs and policy."}, {"image": "images/newindiabazar/keyfinding2.png", "title": "Feedback", "description": "Feedback when an item is placed in cart is not prominent."}, {"image": "images/newindiabazar/keyfinding3.png", "title": "Placement", "description": "Unfamiliar placement of UI elements like cart and search bar."}, {"image": "images/newindiabazar/keyfinding4.png", "title": "Inefficient flow", "description": "Long procedure to place an order of an item."}],
+    "currentUserFlow": "It takes 22 steps to complete purchase of a item.<br/><br/><img src='images/newindiabazar/currentUserFlow.png' />",
     "marketResearch": "Market research was conducted by collecting and comparing data of similar ecommerce websites.  We created a feature inventory list and I did deep element analysis of those websites by creating common categories in an efficient way.<br/><br/><u>Key findings:</u><br/>" +
                        "- An effective navigation structure in a e-commerce website<br/>" +
                        "- An efficient user flow<br/>" +
@@ -114,6 +117,7 @@ $(document).ready(function(){
     initTopProjectContent();
     initProjectOverview();
     initProblemAndSolution();
+    initCurrentState();
     initResearch();
     initPersonas();
     initIdeation();
@@ -129,7 +133,7 @@ function getCurrentProjectIndex(){
 
 function initTopProjectContent(){
     $("body").css("background-color", project["color"]);
-    $("h2,h4,b,h1.internalHeader").css("color", project["hColor"]);
+    $("h2,h4,b,h1.internalHeader,.keyFindingTitle").css("color", project["hColor"]);
     $(".problem-content").css("background-color", project["color"]);
     $(".project-content-top>h1").text(project["name"]);
     $(".project-content-top>p").text(project["subTitle"]);
@@ -157,6 +161,24 @@ function initProblemAndSolution(){
     $("#solutionImg2Text").text(project["solutionImg2Text"]);
     $("#solutionImg3").attr("src", project["solutionImg3"]);
     $("#solutionImg3Text").text(project["solutionImg3Text"]);
+}
+
+function initCurrentState(){
+    if(project["currentState"]){
+        $("#currentState").html(project["currentState"]);
+        $(".keyFinding").each(function(index){
+            if(index < project["keyFindings"].length){
+                $(this).find(".keyFindingImg").attr("src", project["keyFindings"][index]["image"]);
+                $(this).find(".keyFindingTitle").html(project["keyFindings"][index]["title"]);
+                $(this).find(".keyFindingDescription").html(project["keyFindings"][index]["description"]);
+            }else{
+                $(this).hide();
+            }
+        });
+        $("#currentUserFlow").html(project["currentUserFlow"]);
+    }else{
+        $(".currentStateUI").hide();
+    }
 }
 
 function initResearch(){
