@@ -11,12 +11,9 @@ var projectArray = [{
     "tools": "Figma, Trello, Miro<br/>Platform: Mob app",
     "problem": "As Ginger reaches millions of people around the world in 30 countries through its partnerships with employers and health plans demographic group of age 11- 18 is yet to be explored. How can we create a environment where our teenaged users can an approach, a trustworthy way to navigate through personal, social, external obstacles and decision-making in their life without fear of being?",
     "solution": "Designing a new application that creates an interactive, visually pleasing and personalized experience, our users will be able to use preventative measures, self-help methods and professional clinical resources to resolve their problems.",
-    "solutionImg1": "images/teenboost/solutionImg1.gif",
-    "solutionImg1Text": "Multiple category selection during onboarding",
-    "solutionImg2": "images/teenboost/solutionImg2.gif",
-    "solutionImg2Text": "Daily check-in & recommendation",
-    "solutionImg3": "images/teenboost/solutionImg3.gif",
-    "solutionImg3Text": "Explore self help method & get started with coach",
+    "solutionImg": "<div class='col'><img src='images/teenboost/solutionImg1.gif'/><div>Multiple category selection during onboarding</div></div>"+
+                   "<div class='col'><img src='images/teenboost/solutionImg2.gif'/><div>Daily check-in & recommendation</div></div>"+
+                   "<div class='col'><img src='images/teenboost/solutionImg3.gif'/><div>Explore self help method & get started with coach</div></div>",
     "marketResearch": "Market research was conducted by collecting and comparing data of similar apps available in the market. In which we studied different apps like Youper , Moodpath, smiling mind that provided similar service as Ginger.<br/><br/>Here we studied about their UI, user flow and different features that they providedSome of the features that we felt that could solidify our app were daily check ins, Journaling, Insights,quick read on different topics like mental health, mindfulness and various life issues our teen might be going through. One of the major features that we incorporated in our app was a mood gauge that ginger lacks, where users would update how they are feeling and get recommendations accordingly.",
     "featureInventoryImg": "images/teenboost/featureInventoryImg.png",
     "elementAnalysisImg": "images/teenboost/elementAnalysisImg.png",
@@ -64,7 +61,7 @@ var projectArray = [{
                 "- Introducing how connecting with coach works<br/>"+
                 "- Ways to change coach <br/>"+
                 "- Develop notification reminders",
-    "figmaPrototype": "<iframe style='border: 1px solid rgba(0, 0, 0, 0);' width='400' height='800' src='https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FTm8PIUhI0z8JqsdM9DL0Ym%2FGinger-T%3Fnode-id%3D354%253A3302%26viewport%3D2335%252C363%252C0.2600831687450409%26scaling%3Dscale-down&chrome=DOCUMENTATION' allowfullscreen></iframe>"
+    "figmaPrototype": "<iframe style='border: 1px solid rgba(0, 0, 0, 0); width:80%; max-width: 400px;' aspectRatio='2' src='https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FTm8PIUhI0z8JqsdM9DL0Ym%2FGinger-T%3Fnode-id%3D354%253A3302%26viewport%3D2335%252C363%252C0.2600831687450409%26scaling%3Dscale-down&chrome=DOCUMENTATION' allowfullscreen></iframe>"
 },{
     "color":"#DAC3B1",
     "hColor": "#6A4325",
@@ -75,8 +72,9 @@ var projectArray = [{
     "duration": "15 days",
     "roles": "UX/UI designer",
     "tools": "Figma, Trello, Miro",
-    "problem": "To extend the reach of their service to a greater audience they have a responsive website. However, users are overwhelmed with lengthy texts, have difficulty navigating through the website, and frustrated with the lengthy checkout process. <a href='https://www.nibsf.com/' target='blank'>Current website</a> <br/><br/>So, How might we make New India Bazar’s user online shopping experience be easier, faster, and satisfying?",
+    "problem": "To extend the reach of their service to a greater audience they have a responsive website. However, users are overwhelmed with lengthy texts, have difficulty navigating through the website, and frustrated with the lengthy checkout process. <a href='https://www.nibsf.com/' target='blank'>Current website</a> <br/><br/>So, How might we make New India Bazar's user online shopping experience be easier, faster, and satisfying?",
     "solution": "Redesigning the website that provides clear and intuitive user navigation with the efficient flow.",
+    "solutionImg": "<img src='images/newindiabazar/solution.gif' />",
     "currentState": "Before redesigning the website it was very important for me to study its current state. Usability test with five users was conducted which helped me to dissect and pinout different areas of improvement in the site.",
     "keyFindings": [{"image": "images/newindiabazar/keyfinding1.png", "title": "Cognitive load", "description": "Long text on landing, before check out, long pdf files for FAQs and policy."}, {"image": "images/newindiabazar/keyfinding2.png", "title": "Feedback", "description": "Feedback when an item is placed in cart is not prominent."}, {"image": "images/newindiabazar/keyfinding3.png", "title": "Placement", "description": "Unfamiliar placement of UI elements like cart and search bar."}, {"image": "images/newindiabazar/keyfinding4.png", "title": "Inefficient flow", "description": "Long procedure to place an order of an item."}],
     "currentUserFlow": "It takes 22 steps to complete purchase of a item.<br/><br/><img src='images/newindiabazar/currentUserFlow.png' />",
@@ -108,7 +106,7 @@ var projectArray = [{
      "lowFidelity1Img": "images/newindiabazar/lowFidelity1.png",
      "midFidelity": "Next step was to create digital wireframes",
      "midFidelityImg": "images/newindiabazar/midFidelity.png",
-     "figmaPrototype": "<iframe style='border: 1px solid rgba(0, 0, 0, 0.1);' width='800' height='450' src='https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FuSk4vxICjGJNnEhwcia0LY%2FProject2_WIreframing-HI-fi%3Fnode-id%3D90%253A1%26viewport%3D625%252C391%252C0.015625%26scaling%3Dmin-zoom&chrome=DOCUMENTATION' allowfullscreen></iframe>"
+     "figmaPrototype": "<iframe style='border: 1px solid rgba(0, 0, 0, 0.1); width:90%;' aspectRatio='0.56'src='https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FuSk4vxICjGJNnEhwcia0LY%2FProject2_WIreframing-HI-fi%3Fchrome%3DDOCUMENTATION%26kind%3D%26node-id%3D90%253A1%26scaling%3Dscale-down-width%26viewport%3D625%252C391%252C0.015625&chrome=DOCUMENTATION' allowfullscreen></iframe>"
 }];
 
 var project;
@@ -123,7 +121,15 @@ $(document).ready(function(){
     initIdeation();
     initPrototype();
     initNextStep();
+
+    resizeFigmaIframe();
+    $(window).resize(resizeFigmaIframe);
 });
+
+function resizeFigmaIframe(){
+    var ratio = Number($("#figmaPrototype>iframe").attr('aspectRatio'));
+    $("#figmaPrototype>iframe").height($("#figmaPrototype>iframe").width()*ratio);
+}
 
 function getCurrentProjectIndex(){
     var url = new URL(window.location.href);
@@ -155,12 +161,7 @@ function initProjectOverview(){
 function initProblemAndSolution(){
     $("#problemStatement").html(project["problem"]);
     $("#solutionStatement").html(project["solution"]);
-    $("#solutionImg1").attr("src", project["solutionImg1"]);
-    $("#solutionImg1Text").text(project["solutionImg1Text"]);
-    $("#solutionImg2").attr("src", project["solutionImg2"]);
-    $("#solutionImg2Text").text(project["solutionImg2Text"]);
-    $("#solutionImg3").attr("src", project["solutionImg3"]);
-    $("#solutionImg3Text").text(project["solutionImg3Text"]);
+    $("#solutionImageContainer").html(project["solutionImg"]);
 }
 
 function initCurrentState(){
@@ -193,7 +194,12 @@ function initResearch(){
     $("#elementAnalysisImg").attr("src", project["elementAnalysisImg"]);
     $("#userResearch").html(project["userResearch"]);
     $("#userResearchInsights").html(project["userResearchInsights"]);
-    $("#userResearchInsightsImg").attr("src", project["userResearchInsightsImg"]);
+
+    if(project["userResearchInsightsImg"]){
+        $("#userResearchInsightsImg").attr("src", project["userResearchInsightsImg"]);
+    }else{
+        $("#userResearchInsightsImg").hide();
+    }
 }
 
 function initPersonas(){
