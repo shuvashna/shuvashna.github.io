@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fdfbf9f1-1c72-4298-b4fc-d3cd63a54adc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/projectdetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/projectdetail.html" afterDir="false" />
-    </list>
+    <list default="true" id="fdfbf9f1-1c72-4298-b4fc-d3cd63a54adc" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +118,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
