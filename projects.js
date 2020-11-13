@@ -145,8 +145,8 @@ function initTopProjectContent(){
     $(".project-content-top>p").text(project["subTitle"]);
     $(".project-content-top>img").attr("src", project["titleImage"]);
 
-    $('meta[property=og\\:image]').attr('content', project["titleImage"]);
-    $('meta[property=og\\:description]').attr('content', project["subTitle"]);
+    $("meta[property=og\\:image]").attr("content", project["titleImage"]);
+    $("meta[property=og\\:description]").attr("content", project["subTitle"]);
 }
 
 function initProjectOverview(){
