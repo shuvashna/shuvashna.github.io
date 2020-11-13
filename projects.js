@@ -125,9 +125,6 @@ $(document).ready(function(){
     $(window).resize(resizeFigmaIframe);
 });
 
-$("meta[property=og\\:image]").attr("content", project["titleImage"]);
-$("meta[property=og\\:description]").attr("content", project["subTitle"]+project["subTitle"]);
-
 function resizeFigmaIframe(){
     var ratio = Number($("#figmaPrototype>iframe").attr('aspectRatio'));
     $("#figmaPrototype>iframe").height($("#figmaPrototype>iframe").width()*ratio);
