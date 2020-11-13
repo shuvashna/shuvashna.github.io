@@ -109,9 +109,8 @@ var projectArray = [{
      "figmaPrototype": "<iframe style='border: 1px solid rgba(0, 0, 0, 0.1); width:90%;' aspectRatio='0.56'src='https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FuSk4vxICjGJNnEhwcia0LY%2FProject2_WIreframing-HI-fi%3Fchrome%3DDOCUMENTATION%26kind%3D%26node-id%3D90%253A1%26scaling%3Dscale-down-width%26viewport%3D625%252C391%252C0.015625&chrome=DOCUMENTATION' allowfullscreen></iframe>"
 }];
 
-var project;
+var project = projectArray[getCurrentProjectIndex()];
 $(document).ready(function(){
-    project = projectArray[getCurrentProjectIndex()];
     initTopProjectContent();
     initProjectOverview();
     initProblemAndSolution();
@@ -125,6 +124,9 @@ $(document).ready(function(){
     resizeFigmaIframe();
     $(window).resize(resizeFigmaIframe);
 });
+
+$("meta[property=og\\:image]").attr("content", project["titleImage"]);
+$("meta[property=og\\:description]").attr("content", project["subTitle"]+project["subTitle"]);
 
 function resizeFigmaIframe(){
     var ratio = Number($("#figmaPrototype>iframe").attr('aspectRatio'));
@@ -144,9 +146,6 @@ function initTopProjectContent(){
     $(".project-content-top>h1").text(project["name"]);
     $(".project-content-top>p").text(project["subTitle"]);
     $(".project-content-top>img").attr("src", project["titleImage"]);
-
-    $("meta[property=og\\:image]").attr("content", project["titleImage"]);
-    $("meta[property=og\\:description]").attr("content", project["subTitle"]+project["subTitle"]);
 }
 
 function initProjectOverview(){
